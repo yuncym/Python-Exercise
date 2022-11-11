@@ -17,5 +17,17 @@ sum_len = 0
 for d in data: 
 	sum_len = sum_len + len(d)  #每讀一筆會算長度, 然後再加總
 	#print(sum_len)
-
 print('每筆留言平均長度為', sum_len/len(data))
+
+new = []
+#data 清單裡面每一筆每一筆叫出來, 每一個d 都是單獨留言
+#d 是字串, data 是清單
+for d in data: 
+	if len(d) < 100:
+		new.append(d) #如果長度小於一百, 將其裝入清單
+print('一共有: ', len(new), '筆留言長度小於100')
+print(new[0])
+print(new[1])
+
+
+

@@ -9,12 +9,17 @@ while True:
 	p = []
 	# p.append(name)
 	# p.append(price)
-	p = [name, price]  # 這可以取代上面兩行
-	products.append(p)
+	#p = [name, price]  # 這可以取代上面兩行
+	#products.append(p)
+	products.append([name, price])
 
 print(products)  # 印出有多少商品
 
-print(products[0][0])
-print(products[0][1])
+for p in products:
+	#print(p)
+    print(p[0], '的價格是', p[1], '元')
+
+#print(products[0][0])
+#print(products[0][1])
 
 

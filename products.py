@@ -14,10 +14,7 @@ if os.path.isfile('products.csv'):
     print(products)
 else:
     print('找不到檔案!')
-
-
-
-
+###
 
 # 讓使用者輸入
 while True: 
